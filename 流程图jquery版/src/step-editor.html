@@ -1,0 +1,85 @@
+<font><b>为人事准备材料</b>&nbsp;|&nbsp;</font>
+<a href="javascript:window.wfUi.editor.removeNode(31);void(0);" class="link-btn">删除节点</a>
+(
+<a href="javascript:wfEidtor.del(4,true);void(0);" class="link-btn">包含下级</a>
+)
+<a href="ss" class="link-btn">所有处理意见</a>
+
+<p id="wf-actor-info" class="desc font-large quote">同意，但是务必在本月底前完成。</p>
+
+<div>		
+	<div id="wf-actor-content">
+		<p>
+			<input id="wf-actors" name="id" type="text" value="1,2,3,4,5" />
+			<input name="id-text" type="text" value="第一个用,第二个用,第三个用户,第四,第五个" />
+		</p>
+		
+		<input id="wf-actor-type" class="btn-toggle" type="hidden"
+			value="user" fir="user" firtext="用户" sec="dept" sectext="部门"
+			thir="role" thirtext="角色" />&nbsp;<a href="#" class="link-btn small12" >外部公司人员</a>
+	
+		<p id="wf-actor-user">
+			<label class="nwrap"><input id="wf-actor-user-1" value="1" type="checkbox" />第一个用户</label>
+			<label class="nwrap"><input id="wf-actor-user-2" value="2" type="checkbox" />第二个用户</label>
+			<label class="nwrap"><input id="wf-actor-user-3" value="3" type="checkbox" />第三个用户</label>
+			<label class="nwrap"><input id="wf-actor-user-4" value="4" type="checkbox" />第四个用户</label>
+		</p>
+		
+		<p id="wf-actor-dept">
+			<label class="nwrap"><input id="wf-actor-dept-1" value="1" type="checkbox" />第一个单位</label>
+			<label class="nwrap"><input id="wf-actor-dept-2" value="2" type="checkbox" />第二个单位</label>
+			<label class="nwrap"><input id="wf-actor-dept-3" value="3" type="checkbox" />第三个单位</label>
+			<label class="nwrap"><input id="wf-actor-dept-4" value="4" type="checkbox" />第四个单位</label>
+			<label class="nwrap"><input id="wf-actor-dept-5" value="5" type="checkbox" />第五个单位</label>
+		</p>
+		
+		
+		<p id="wf-actor-role">
+			<label class="nwrap"><input id="wf-actor-role-1" value="1" type="checkbox" />第一个角色</label>
+			<label class="nwrap"><input id="wf-actor-role-2" value="2" type="checkbox" />第二个角色</label>
+			<label class="nwrap"><input id="wf-actor-role-3" value="3" type="checkbox" />第三个角色</label>
+		</p>
+	</div>
+</div>
+
+<script>
+$(function(){
+	var sel = $("input#wf-actors").sel({
+		change:function(items){
+			items = items || []; 
+
+			var pr = "wf-actor-" + $("#wf-actor-type").val() + "-" ;
+
+			$("#wf-actor-content").find("input[type=checkbox]").attr("checked",false);
+			
+			var i ,len = items.length ;
+			for(i = 0;i < len ;i ++){
+				$("#" + pr + items[i].id).attr("checked",true);
+			}
+	}});
+	
+	var tb = $("#wf-actor-type").toggleBtn({
+		callback:function(val){
+			$("#wf-actor-user,#wf-actor-dept,#wf-actor-role").hide();
+
+			$("#wf-actor-" + val).show();
+
+			/*
+			var i ,len = its.length ;
+			for(i =0 ; i < len ;i ++){
+				var it = its[i];
+
+				if(it){
+					var id = "wf-actor-" + $("#wf-actor-type").val() + "-" + it["id"];
+					$("#" + id).attr("checked",true);
+				}
+			}
+			*/
+
+			sel.trigger("change");
+		}
+	});
+
+	
+});
+</script>

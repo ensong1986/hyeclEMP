@@ -1,0 +1,203 @@
+body{
+}
+
+div#wf-ui{
+	height:100px;
+	
+	background:url(../img/ico.wf.png) repeat-x -10px -200px;
+}
+
+div#wf-ui a#wf-pot{
+	width:15px ;
+	height:10px ;
+	display:inline-block ;
+	overflow:hidden;
+	
+	position:absolute ;
+	background:url(../img/ico.wf.png) no-repeat -53px -119px ;
+}
+
+div#wf-ui .pot-main{	
+	width:24px ;
+	height:10px ;
+	display:inline-block ;
+	overflow:hidden;
+	
+	position:absolute ;
+}
+
+div#wf-ui .pot-main:link{
+	background:url(../img/ico.wf.png) no-repeat -24px -115px ;
+}
+
+div#wf-ui .pot-main:visited{
+	background:url(../img/ico.wf.png) no-repeat -24px -115px ;
+}
+
+div#wf-ui .pot-main:hover{
+	background:url(../img/ico.wf.png) no-repeat -24px -160px ;
+}
+
+div#wf-ui .pot-read{
+	width:14px ;
+	height:35px ;
+	display:inline-block ;
+	overflow:hidden;
+	
+	
+	position:absolute ;
+}
+
+div#wf-ui .pot-read:link{
+	background:url(../img/ico.wf.png) no-repeat -10px -115px ;
+}
+
+div#wf-ui .pot-read:visited{
+	background:url(../img/ico.wf.png) no-repeat -10px -115px ;
+}
+
+div#wf-ui .pot-read:hover{
+	background:url(../img/ico.wf.png) no-repeat -10px -160px ;
+}
+
+
+
+a.step{	
+	width:70px;
+	height:26px;
+	line-height:26px;
+	
+	position:absolute ;	
+	cursor:hand;
+	
+	padding-left:24px;
+	padding-right:6px;
+	
+	text-decoration : none;
+	text-overflow:hidden;
+	overflow:hidden;
+	
+	display: inline-block;
+}
+
+a.step-start:link{
+	color:#666666;
+	background:url(../img/ico.wf.png) no-repeat -10px -10px ;
+}
+
+a.step-start:visited{
+	color:#666666;
+	background:url(../img/ico.wf.png) no-repeat -10px -10px ;
+}
+
+a.step-start:hover{
+	color:#333333;
+	background:url(../img/ico.wf.png) no-repeat -10px -36px ;
+}
+
+
+
+
+a.step-main-passed:link{
+	color:#666666;
+	background:url(../img/ico.wf.png) no-repeat -110px -10px ;
+}
+
+a.step-main-passed:visited{
+	color:#666666;
+	background:url(../img/ico.wf.png) no-repeat -110px -10px ;
+}
+
+a.step-main-passed:hover{
+	color:#333333;
+	background:url(../img/ico.wf.png) no-repeat -110px -36px ;
+}
+
+
+
+a.step-main-actived:link{
+	color:#666666;
+	background:url(../img/ico.wf.png) no-repeat -210px -10px ;
+}
+
+a.step-main-actived:visited{
+	color:#666666;
+	background:url(../img/ico.wf.png) no-repeat -210px -10px ;
+}
+
+a.step-main-actived:hover{
+	color:#ffffff;
+	background:url(../img/ico.wf.png) no-repeat -210px -36px ;
+}
+
+
+
+
+
+a.step-main-waitting:link{
+	color:#666666;
+	background:url(../img/ico.wf.png) no-repeat -310px -10px ;
+}
+
+a.step-main-waitting:visited{
+	color:#666666;
+	background:url(../img/ico.wf.png) no-repeat -310px -10px ;
+}
+
+a.step-main-waitting:hover{
+	color:#333333;
+	background:url(../img/ico.wf.png) no-repeat -310px -36px ;
+}
+
+
+
+a.step-read-passed:link{
+	color:#666666;
+	background:url(../img/ico.wf.png) no-repeat -10px -62px ;
+}
+
+a.step-read-passed:visited{
+	color:#666666;
+	background:url(../img/ico.wf.png) no-repeat -10px -62px ;
+}
+
+a.step-read-passed:hover{
+	color:#333333;
+	background:url(../img/ico.wf.png) no-repeat -10px -88px ;
+}
+
+
+
+a.step-read-actived:link{
+	color:#666666;
+	background:url(../img/ico.wf.png) no-repeat -210px -62px ;
+}
+
+a.step-read-actived:visited{
+	color:#666666;
+	background:url(../img/ico.wf.png) no-repeat -210px -62px ;
+}
+
+a.step-read-actived:hover{
+	color:#ffffff;
+	background:url(../img/ico.wf.png) no-repeat -210px -88px ;
+}
+
+
+
+
+
+a.step-read-waitting:link{
+	color:#666666;
+	background:url(../img/ico.wf.png) no-repeat -110px -62px ;
+}
+
+a.step-read-waitting:visited{
+	color:#666666;
+	background:url(../img/ico.wf.png) no-repeat -110px -62px ;
+}
+
+a.step-read-waitting:hover{
+	color:#333333;
+	background:url(../img/ico.wf.png) no-repeat -110px -88px ;
+}

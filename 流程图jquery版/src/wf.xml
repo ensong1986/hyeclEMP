@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<workflow id="testtesttest00001" name="李四的升职申请" state="draft"
+	type="app.dotx.wf.leave.LeaveInfo">
+
+	<step id="1" name="办公室审批" type="main"
+		actorType="keng.core.app.sys.UserInfo" state="passed"
+		actorName="李主任">
+
+		<step id="2" name="部长审批" type="main"
+			actorType="keng.core.app.sys.UserInfo" state="passed"
+			actorName="王部长">
+
+			<step id="4" name="人事执行" type="main"
+				actorType="keng.core.app.sys.DeptInfo" state="actived"
+				actorName="人事部门">
+
+				<step id="6" name="存档" type="main"
+					actorType="keng.core.app.sys.DeptInfo" state="waitting"
+					actorName="档案室" />
+			</step>
+
+			<step id="5" name="为人事准备材料" type="read"
+				actorType="keng.core.app.sys.UserInfo" state="waitting"
+				actorName="李四" />
+		</step>
+
+		<step id="3" name="部长审阅" type="read"
+			actorType="keng.core.app.auth.RoleInfo" state="passed"
+			actorName="部长角色" />
+		
+		<step id="31" name="副部长审阅" type="read"
+			actorType="keng.core.app.auth.RoleInfo" state="actived"
+			actorName="部长角色" />
+	</step>
+
+</workflow>
